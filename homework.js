@@ -1,22 +1,61 @@
-// 1. Create a function called "remove" that takes an array and a potential
-// member of the array, and returns a new array with that member removed.
+// 1. Create a function called "remove" (done)
+// that takes an array and a potential
+// member of the array
+// and returns a new array with that member removed.
 // For example, `remove(['Cadence', 'Ordel', 'Marion'], 'Marion')` results
 // in `['Cadence', 'Ordel']`.
-//
 // If the potential member is not in the array, return the array unchanged.
 // If the potential member is in the array, remove all instances of it from the array.
+
+function remove(people, person) {
+    let newArray = people.slice()
+    while (newArray.includes(person)) {
+    let position = people.indexOf(person)
+    newArray.splice(position, 1)
+    // let position
+    }
+    return newArray
+}
+
 
 // 2. Revisit your "remove" function. Make sure that it does not change the original
 // array but instead returns a new array.
 
+
 // 3. Create a function called "sum" that takes an array of numbers and
 // returns the sum of those numbers.
 
-// 4. Create a function called "average" that takes an array of numbers
+function sum(nums) {
+    let nums = 0
+    for (let i = 0; i < nums.length; i++) {
+sum += nums[i];
+    }
+return sum
+
+// 4. Create a function called "average" 
+// that takes an array of numbers
 // and returns the average of those numbers.
+function average(arrayaver) {
+    let sum = 0;
+    for (let i = 0; i < arrayaver.length; i++) {
+
+sum = sum + arrayaver[i];
+    }
 
 // 5. Create a function called "minimum" that takes an array of numbers and
 // returns the smallest number in that array.
+function minimum(shortestnum) {
+    let shortestnumber = null
+    if (shortestnum.length === 0) {
+return
+}
+
+for (let smallnum of shortestnum) {
+    if (shortestnumber === null || smallnum < shortestnum)
+   smallnum = shortestnumber
+return shortestnumber;
+}
+    
 
 // 6. There are many techniques to sort arrays in programming. Your programming
 // language will likely include the ability to do this. We are going to
